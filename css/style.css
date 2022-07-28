@@ -1,0 +1,97 @@
+/*####### Defaults ######*/
+nav,
+header,
+footer {
+        display: block;
+}
+
+body {
+        margin: 0;
+        line-height: 1;
+}
+
+.container {
+        width: 100%;
+        margin: auto;
+}
+
+.row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+}
+
+.row::after{
+        display: table;
+        clear: both;
+        content: "";
+}
+
+.col-1 {width: 8.33% }
+.col-2 {width: 16.66% }
+.col-3 {width: 25% }
+.col-4 {width: 33.33% }
+.col-5 {width: 41.66% }
+.col-6 {width: 50% }
+.col-7 {width: 58.33% }
+.col-8 {width: 66.66% }
+.col-9 {width: 75% }
+.col-10 {width: 83.33% }
+.col-11 {width: 91.66 }
+.col-12 {width: 100% }
+
+
+/*#######Header Styles#####*/
+header {
+	background: yellow;
+	background: -o-linear-gradient(white, yellow);
+	background: -webkit-linear-gradient(white, yellow);
+	background: -moz-linear-gradient(white, yellow);
+	background: linear-gradient(white, yellow);
+}
+
+div.container.giveBackground {
+	background: url('/assets/images/uplinks-o1.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-bottom-right-radius: 20% 50%;
+}
+
+div.giveMargin {
+	margin-top: 8px;
+}
+div.giveBorder {
+	border-bottom: 0.001em solid #666;
+}
+
+div.removeMargin {
+	margin-top: 0;
+}
+
+h1.brandName {
+	margin: 5px 10px;
+	font-size: 1.4rem;
+}
+
+ul.menuLists {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-left: 2%;
+	padding: 0;
+}
+ul.menuLists > li {
+	display: inline;
+	padding: 3px;
+	
+}
+
+ul.menuLists > li:hover {
+	background: red;
+	
+}
+li > a.listLinks {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
